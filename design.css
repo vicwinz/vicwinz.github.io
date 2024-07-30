@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ff6f61;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    transition: background-color 0.3s ease;
+    font-size: larger;
+}
+
+nav a:hover {
+    background-color: #ff3f3f;
+}
+
+.container {
+    padding: 2em;
+    text-align: center;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+i {
+    font-size: 40px; /* Increase size to 24 pixels */
+    margin-right: 8px; /* Add some space between icon and text */
+  }
+
+  img{
+    height: 200px;
+    width: 300px;
+
+  }
+
+
+
+
+
+
+
+
+  /* moving text*/
+  .moving-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: bold;
+    animation: moveText 10s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        left: -100%;
+        color: rgb(119, 0, 255);
+    }
+    25% {
+        color: rgb(7, 7, 7);
+    }
+    50% {
+        color: rgb(82, 7, 82);
+    }
+    75% {
+        color: green;
+    }
+    100% {
+        left: 100%;
+        color: blue;
+    }
+}
